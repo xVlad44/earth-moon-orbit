@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth-Moon-Sun System - Interactive 3D Physics Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="loading-text">Loading Earth-Moon-Sun System...</div>
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <div id="info">
+        <h2>Earth-Moon-Sun System</h2>
+        <p>This interactive 3D visualization shows Earth's elliptical orbit around the Sun and the Moon's orbit around Earth. The simulation uses realistic gravitational physics with Newton's laws.</p>
+        <p><strong>Controls:</strong> Click & drag to rotate, scroll to zoom, use controls below to adjust simulation.</p>
+        <p><strong>Physics:</strong> Three-body gravitational simulation with proper orbital mechanics.</p>
+    </div>
+    
+    <div id="stats">
+        <div class="stat-item">
+            <span>Earth Distance:</span>
+            <span class="stat-value" id="distance">149.6M km</span>
+        </div>
+        <div class="stat-item">
+            <span>Orbital Speed:</span>
+            <span class="stat-value" id="orbitalSpeed">29.78 km/s</span>
+        </div>
+        <div class="stat-item">
+            <span>Day of Year:</span>
+            <span class="stat-value" id="dayOfYear">1</span>
+        </div>
+        <div class="stat-item">
+            <span>Camera Distance:</span>
+            <span class="stat-value" id="cameraDistance">200</span>
+        </div>
+    </div>
+    
+    <div id="controls">
+        <button class="control-btn" id="pauseBtn">Pause</button>
+        <div id="speedControl">
+            <span>Speed:</span>
+            <input type="range" id="speedSlider" min="0.1" max="5" value="1" step="0.1">
+            <span id="speedValue">1x</span>
+        </div>
+        <button class="control-btn" id="trailsBtn">Show Trails</button>
+        <button class="control-btn" id="labelsBtn">Show Labels</button>
+    </div>
+    
+    <div id="tooltip"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
