@@ -1,5 +1,8 @@
 # 🌍 Earth Orbit 3D Simulator
 
+## 🔗 Live Demo
+[Check it out here!](https://xvlad44.github.io/earth-moon-orbit/)
+
 Hey there! 👋
 
 Welcome to the Earth Orbit 3D Simulator! This is a fun, interactive web app that lets you watch the Earth orbit the Sun (in a realistic ellipse!) and see the Moon doing its thing around the Earth. It’s all rendered in 3D using Three.js, so you can zoom, pan, and spin around the solar system like a cosmic explorer.
